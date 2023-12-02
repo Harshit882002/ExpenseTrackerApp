@@ -1,0 +1,36 @@
+<%- include("header")%>
+<%- include("nav2")%>
+
+<h1 id="profileh1">👋 Hey <%= admin.username%></h1>
+
+<div class="form1">
+<button id="profilebtn"><a href="/createexpense">Add New Expense</a></button>
+
+<form action="/filter">
+    <select name="key" id="profileSel">
+        <option value="amount">Enter Ammount</option>
+        <option value="remark">Enter Remark</option>
+        <option value="category">Enter Category</option>
+        <option value="paymentmode">Payment Mode</option>
+        <option value="Date">Date</option>
+     </select> 
+    <!-- <input type="text" name="value" placeholder="Enter Search Term">
+    <input type="number" name="ammount" placeholder="Enter Ammount">
+    <input type="text" name="remark" placeholder="Enter Remark">
+    <input type="text" name="category" placeholder="Enter Category"> -->
+    <input type="text" name="value" placeholder="Enter Search Term">
+    
+    <button>Filter</button>
+</form>
+
+
+
+<h2 id="profileh2">Sum: <%= expenses.reduce((ac,cv) => ac+cv.amount, 0)%></h2>
+
+</div>
+<hr>
+<div class="box">
+    <%= JSON.stringify(expenses) %>
+</div>
+    <%- include("footer")%>
+

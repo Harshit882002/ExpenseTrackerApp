@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+nav {
+  height: 10vh;
+  width: 100vw;
+  background-color: mediumvioletred;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+nav a {
+  font-size: 17px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all ease 2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+#signuph1 {
+  margin: 60px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 310px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: mediumvioletred;
+  /* backdrop-filter: blur(10px); */
+  margin: 20px auto;
+  border: 2px solid black;
+
+}
+
+.form {
+  padding: 25px;
+}
+
+.form input {
+  display: block;
+  width: 90%;
+  margin: 20px 20px;
+  padding-left: 5px;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 5px;
+  /* border: 2px solid #1a73e8; */
+  outline: none;
+  /* font-family: "Nunito", serif; */
+  font-size: 16px;
+  /* color: black; */
+}
+
+#eye-icon {
+  position: absolute;
+  cursor: pointer;
+  top: 251px;
+  right: 75px;
+  color: black;
+}
+
+.form .term {
+  margin-left: -33%;
+  height: 15px;
+}
+
+.form p {
+  margin-left: 20px;
+  /* text-align: center; */
+  font-weight: 500;
+}
+
+.form button {
+  display: block;
+  width: 80%;
+  margin: 20px 20px;
+  /* border: none; */
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  /* font-family: "Nunito", serif; */
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.form button:hover {
+  background-color: mediumvioletred;
+  color: white;
+  border: 2px solid white;
+}
+.form-container a{
+  color: black;
+  text-decoration: none;
+}
+.form-container a span{
+  color: rgb(8, 8, 189);
+  font-size: 15px;
+}
+#profileh1{
+  margin-top: 50px;
+}
+#profileh2{
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.form1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 500px;
+  height: auto;
+  margin-left: 530px;
+  background-color: mediumvioletred;
+  margin-bottom: 40px;
+}
+.form1 button{
+  padding: 6px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.form1 button a{
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+.form1 input{
+  padding: 6px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#profileSel{
+  padding: 6px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#expenseh1{
+  margin-top: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.form2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  margin-left: 620px;
+  background-color: mediumvioletred;
+}
+.form2 input{
+  padding: 7px 50px;
+  margin-top: 15px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+.form2 select{
+  padding: 7px 93px;
+  margin-top: 15px;
+  border: 2px solid black;
+  border-radius: 7px;
+  /* width: 50px; */
+}
+.form2 button{
+  padding: 7px 50px;
+  margin-top: 25px;
+  border: 2px solid black;
+  margin-left: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.box{
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+  /* text-align: center; */
+}
+#reseth1{
+  margin-top: 200px;
+}
+.form3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 300px;
+  height: auto;
+  margin-left: 620px;
+  background-color: mediumvioletred;
+}
+.form3 input{
+  padding: 7px 50px;
+  margin-top: 15px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+.form3 button{
+  padding: 7px 50px;
+  margin-top: 25px;
+  border: 2px solid black;
+  margin-left: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#datah1{
+  margin-top: 60px;
+}

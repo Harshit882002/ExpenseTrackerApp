@@ -1,0 +1,14 @@
+<%- include("header")%>
+
+<h1 id="datah1">👋<%= admin.username%></h1>
+
+<% expenses.forEach(function(val){%>
+     Amount : <%= val.amount%> <br>
+     Remark : <%= val.remark%> <br>
+     Category : <%= val.category%> <br>
+     Paymentmode : <%= val.paymentmode%>
+
+     <br><br>
+     <hr>
+<%})%>
+<%- include("footer")%>

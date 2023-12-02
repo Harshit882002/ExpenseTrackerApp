@@ -1,0 +1,19 @@
+<%- include("header.ejs") %>
+    <%- include("nav.ejs") %>
+        <h1 id="signuph1">Welcome to Sign Up Page</h1>
+        <div class="form-container">
+            <div class="form">
+                <form action="/signup" method="post">
+                    <input type="text" name="username" placeholder="Enter UserName " required>
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                    <input type="password" name="password" placeholder="Enter Password">
+                    <i class="fa fa-eye" id="eye-icon" onclick="togglePassword()"></i>
+                    <input type="checkbox" class="term" id="terms" name="terms" required>
+                    <p>I Agree to the Terms and Conditions </p>
+                    <button type="submit">Create Account</button>
+                </form>
+
+                <a href="/signin">Already have an Account ? <span> Sign In</span></a>
+            </div>
+        </div>
+        <%- include("footer.ejs") %>

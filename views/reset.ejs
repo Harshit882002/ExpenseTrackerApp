@@ -1,0 +1,16 @@
+<%- include("header")%>
+<!--  -->
+<%- include("nav")%>
+<!--  -->
+
+<h1 id="reseth1">WelCome to Reset Password Page</h1>
+<div class="form3">
+<form action="/reset" method="post">
+    <input type="password" name="oldpassword" placeholder="Enter Old Password">
+    <input type="password" name="newpassword" placeholder="Enter New Password">
+    <br>
+    <button>Reset</button>
+</form>
+</div>
+
+<%- include("footer")%>

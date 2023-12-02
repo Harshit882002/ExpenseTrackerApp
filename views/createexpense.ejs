@@ -1,0 +1,22 @@
+<%- include("header.ejs")%>
+<!--  -->
+<%- include("nav.ejs")%>
+<!--  -->
+
+<h1 id="expenseh1">Welcome to Create Expense Page <br> Please Create New Expense</h1>
+<div class="form2">
+<form action="/createexpense" method="post">
+    <input type="number" name="amount" placeholder="Enter Ammount">
+    <input type="text" name="remark" placeholder="Enter Remark">
+    <input type="text" name="category" placeholder="Enter Category">
+    <select name="paymentmode" id="">
+        <option value="cash">Cash</option>
+        <option value="online">Online</option>
+        <option value="check">Check</option>
+    </select>
+    <br>
+    <button>Add Expense</button>
+</form>
+</div>
+
+<%- include("footer.ejs")%>

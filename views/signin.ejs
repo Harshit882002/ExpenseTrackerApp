@@ -1,0 +1,30 @@
+<%- include("header.ejs") %>
+    <%- include("nav.ejs") %>
+        <h1 id="signuph1">Welcome to Sign In Page</h1>
+
+        <div class="form-container">
+            <div class="form">
+                <% if(error.length > 0){ %>
+                    <p class="error">
+                        <%= error %>
+                    </p>
+               <% } %>
+
+               <form action="/signin" method="post">
+
+                <input type="text" name="username" placeholder="Enter Your Name">
+
+                <input type="password" name="password" placeholder="Enter Your Password" required>
+
+                <i class="fa fa-eye" id="eye-icon"           onclick="togglePassword()"></i>
+
+                <button type="submit">Log In Account</button>
+               </form>
+
+               <a href="/forget">Forget Password</a>
+
+               <a href="/signup">Not yet registered? <span>Sign up</span></a>
+            </div>
+        </div>
+
+        <%- include("footer.ejs") %>

@@ -1,0 +1,11 @@
+<%- include("header")%>
+<%- include("nav")%>
+<h1>This is Send Mail Page</h1>
+
+<form action="/forget/<%= id %>" method="post">
+    <input type="number" name="token" placeholder="Enter OTP Here...">
+    <input type="password" name="newpassword" placeholder="Enter New Password">
+    <button>Verify</button>
+</form>
+
+<%- include("footer")%>
